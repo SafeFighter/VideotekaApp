@@ -11,10 +11,10 @@ using System.Windows.Forms;
 
 namespace VideotekaApp
 {
-    public partial class Form1 : Form
+    public partial class Prijava : Form
     {
         string conString= "Data Source=MASTER2\\SQLEXPRESS;Initial Catalog=VideotekaDB;Integrated Security=True;";
-        public Form1()
+        public Prijava()
         {
             InitializeComponent();
         }
@@ -37,6 +37,9 @@ namespace VideotekaApp
                         if (reader.Read() == true)
                         {
                             MessageBox.Show("Uspjesna prijava");
+                            Form2 forma2=new Form2();
+                            forma2.Show();
+                            this.Hide();
                         }
                         else MessageBox.Show("Neuspjesna prijava pokusajte opet");
                     }

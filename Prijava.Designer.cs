@@ -1,6 +1,6 @@
 ﻿namespace VideotekaApp
 {
-    partial class Form1
+    partial class Prijava
     {
         /// <summary>
         /// Required designer variable.

@@ -19,7 +19,30 @@ namespace VideotekaApp
 
         private void btnDodaj_Click(object sender, EventArgs e)
         {
+            int id;
+            
+            if(int.TryParse(tbId.Text,out id))
+            {
+                Clan noviClan = new Clan()
+                {
+                    Id = id,
+                    Ime = tbIme.Text,
+                    Prezime = tbPrezime.Text,
+                    BrojTelefona = tbTelefon.Text,
+                    Email = tbEmail.Text,
+                    Adresa = tbAdresa.Text,
+                };
+                
+                ClanRep clanRep= new ClanRep();
+                clanRep.dodajClana(noviClan);
+                MessageBox.Show("Clan uspjesno dodan");
 
+            }
+            else
+            {
+                MessageBox.Show("Unesite ispravnu vrijednost za id!");
+            }
+           
         }
 
         private void btnPovratak_Click(object sender, EventArgs e)

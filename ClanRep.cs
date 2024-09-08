@@ -13,7 +13,7 @@ namespace VideotekaApp
 
         public void dodajClana(Clan clan)
         {
-            string upit = "INSERT INTO Clan (id,ime, prezime, telefon, email, adresa) VALUES (@Id, @Ime, @Prezime, @BrojTelefona, @Email, @Adresa)";
+            string upit = "INSERT INTO Clan (id_clan,ime, prezime, telefon, email, adresa) VALUES (@Id, @Ime, @Prezime, @BrojTelefona, @Email, @Adresa)";
 
             using (SqlConnection con = new SqlConnection(conString))
             {

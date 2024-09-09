@@ -39,11 +39,11 @@ namespace VideotekaApp
                     Id = id,
                     Trajanje = trajanje,
                     Ocjena = ocjena,
-                    BrojKopija=broj_kopija,
-                    Redatelj=tbRedatelj.Text,
-                    Godina= tbGodina.Text,
-                    Zanr=tbZanr.Text,
-                    Naslov=tbNaslov.Text,
+                    BrojKopija = broj_kopija,
+                    Redatelj = tbRedatelj.Text,
+                    Godina = tbGodina.Text,
+                    Zanr = tbZanr.Text,
+                    Naslov = tbNaslov.Text,
                 };
 
                 FilmRep filmRep = new FilmRep();

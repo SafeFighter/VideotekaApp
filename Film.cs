@@ -16,6 +16,6 @@ namespace VideotekaApp
         public string Redatelj {  get; set; }
         public decimal Ocjena { get; set; }
         public int BrojKopija {  get; set; }
-        public bool Dostupan { get; set; }
+
     }
 }

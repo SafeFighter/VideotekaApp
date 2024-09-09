@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace VideotekaApp
 {
+
     public class Posudba
     {
         public int Id { get; set; }
@@ -13,5 +14,6 @@ namespace VideotekaApp
         public int FilmId { get; set; }
         public DateTime DatumPosudbe { get; set; }
         public DateTime? DatumVracanja { get; set; }
+
     }
 }

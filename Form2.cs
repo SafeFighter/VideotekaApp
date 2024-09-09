@@ -37,5 +37,12 @@ namespace VideotekaApp
             d.Show();
             this.Hide();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            PosudiFilm posudi = new PosudiFilm();
+            posudi.Show();
+            this.Hide();
+        }
     }
 }

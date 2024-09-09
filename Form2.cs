@@ -30,5 +30,12 @@ namespace VideotekaApp
             dodajClana.Show();
             this.Hide();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            DodajFilm d = new DodajFilm();
+            d.Show();
+            this.Hide();
+        }
     }
 }

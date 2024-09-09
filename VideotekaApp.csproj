@@ -54,6 +54,13 @@
     <Compile Include="DodajClana.Designer.cs">
       <DependentUpon>DodajClana.cs</DependentUpon>
     </Compile>
+    <Compile Include="DodajFilm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DodajFilm.Designer.cs">
+      <DependentUpon>DodajFilm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FilmRep.cs" />
     <Compile Include="Posudba.cs" />
     <Compile Include="Film.cs" />
     <Compile Include="Prijava.cs">
@@ -72,6 +79,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="DodajClana.resx">
       <DependentUpon>DodajClana.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DodajFilm.resx">
+      <DependentUpon>DodajFilm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Prijava.resx">
       <DependentUpon>Prijava.cs</DependentUpon>

@@ -11,7 +11,11 @@ namespace VideotekaApp
         public int Id { get; set; }
         public string Naslov { get; set; }
         public string Zanr { get; set; }
-        public int Godina { get; set; }
+        public string Godina { get; set; }
+        public int Trajanje { get; set; }
+        public string Redatelj {  get; set; }
+        public decimal Ocjena { get; set; }
+        public int BrojKopija {  get; set; }
         public bool Dostupan { get; set; }
     }
 }

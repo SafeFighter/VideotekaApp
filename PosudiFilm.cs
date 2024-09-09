@@ -27,21 +27,26 @@ namespace VideotekaApp
         {
             string connectionString = "Data Source=MASTER2\\SQLEXPRESS;Initial Catalog=VideotekaDB;Integrated Security=True;";
 
-            string upit = "SELECT * FROM Clan";
+            string upit1 = "SELECT * FROM Clan";
             string upit2 = "SELECT * FROM Film";
+            string upit3 = "SELECT * FROM Iznajmljivanje";
             using (SqlConnection con = new SqlConnection(connectionString))
             {
-                SqlDataAdapter da1 = new SqlDataAdapter(upit, con);
+                SqlDataAdapter da1 = new SqlDataAdapter(upit1, con);
                 SqlDataAdapter da2 = new SqlDataAdapter(upit2, con);
+                SqlDataAdapter da3 = new SqlDataAdapter(upit3, con);
 
                 con.Open();
                 DataTable dt1 = new DataTable();
                 DataTable dt2 = new DataTable();
+                DataTable dt3 = new DataTable();
                 da1.Fill(dt1);
                 da2.Fill(dt2);
+                da3.Fill(dt3);
 
                 dataGridView1.DataSource = dt1;
                 dataGridView2.DataSource = dt2;
+                dataGridView3.DataSource = dt3;
 
 
             }

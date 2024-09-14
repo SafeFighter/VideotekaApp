@@ -154,6 +154,7 @@
             this.Controls.Add(this.tbId);
             this.Name = "DodajFilm";
             this.Text = "DodajFilm";
+            this.Load += new System.EventHandler(this.DodajFilm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

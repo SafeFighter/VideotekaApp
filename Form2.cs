@@ -44,5 +44,12 @@ namespace VideotekaApp
             posudi.Show();
             this.Hide();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            VratiFilm vrati = new VratiFilm();
+            vrati.Show();
+            this.Hide();
+        }
     }
 }

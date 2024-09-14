@@ -49,8 +49,27 @@ namespace VideotekaApp
                 FilmRep filmRep = new FilmRep();
                 filmRep.dodajFilm(filmovi);
                 MessageBox.Show("Film uspjesno dodan");
+                setPlaceholder();
+                
             }
             else MessageBox.Show("Film nije dodan");
+        }
+
+        public void setPlaceholder()
+        {
+            tbId.Text = "ID";
+            tbTrajanje.Text = "Trajanje";
+            tbOcjena.Text = "Ocjena";
+            tbBrojKopija.Text = "Broj kopija";
+            tbRedatelj.Text = "Redatelj";
+            tbGodina.Text = "Godina";
+            tbZanr.Text = "Zanr";
+            tbNaslov.Text = "Naslov";
+        }
+
+        private void DodajFilm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -81,6 +81,7 @@
             this.button4.TabIndex = 8;
             this.button4.Text = "Vrati film";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // btnOdjaviSe
             // 
@@ -105,7 +106,7 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.button2);
             this.Name = "Form2";
-            this.Text = "Form2";
+            this.Text = "Odabir";
             this.ResumeLayout(false);
 
         }

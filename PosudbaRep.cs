@@ -5,6 +5,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace VideotekaApp
 {
@@ -50,7 +51,7 @@ namespace VideotekaApp
             }
         }
 
-        public void VratiFilm(int idFilm)
+        public void VratiFilm(int idFilm,int idPosudbe)
         {
             string connectionString = "Data Source=MASTER2\\SQLEXPRESS;Initial Catalog=VideotekaDB;Integrated Security=True;";
 
@@ -58,10 +59,17 @@ namespace VideotekaApp
             {
                 con.Open();
 
-                string queryUpdate = "UPDATE Film SET BrojKopija = BrojKopija + 1 WHERE Id = @idFilm";
+                string queryUpdate = "UPDATE Film SET broj_kopija= broj_kopija + 1 WHERE id_film = @idFilm";
+                
                 SqlCommand cmdUpdate = new SqlCommand(queryUpdate, con);
                 cmdUpdate.Parameters.AddWithValue("@idFilm", idFilm);
                 cmdUpdate.ExecuteNonQuery();
+
+                string queryDelete = "DELETE FROM Iznajmljivanje WHERE id_iznajmljivanje=@idPosudbe";
+                SqlCommand cmdDelete = new SqlCommand(queryDelete, con);
+                cmdDelete.Parameters.AddWithValue("@idPosudbe", idPosudbe);
+                cmdDelete.ExecuteNonQuery();
+                MessageBox.Show("Film je uspjesno vracen");
             }
         }
 

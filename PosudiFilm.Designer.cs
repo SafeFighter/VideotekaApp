@@ -156,7 +156,7 @@
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.button1);
             this.Name = "PosudiFilm";
-            this.Text = "Form1";
+            this.Text = "Posudba";
             this.Load += new System.EventHandler(this.PosudiFilm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();

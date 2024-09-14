@@ -132,6 +132,7 @@
             this.Controls.Add(this.tbId);
             this.Name = "DodajClana";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.DodajClana_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

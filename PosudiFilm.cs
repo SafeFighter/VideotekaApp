@@ -67,6 +67,7 @@ namespace VideotekaApp
             if (uspjesno)
             {
                 MessageBox.Show("Film je uspješno posuđen!");
+                ucitajTablicu();
             }
             else
             {

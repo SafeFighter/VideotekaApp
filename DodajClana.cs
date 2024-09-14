@@ -36,6 +36,7 @@ namespace VideotekaApp
                 ClanRep clanRep= new ClanRep();
                 clanRep.dodajClana(noviClan);
                 MessageBox.Show("Clan uspjesno dodan");
+                setPlaceholder();
 
             }
             else
@@ -50,6 +51,20 @@ namespace VideotekaApp
             Form2 form2 = new Form2();
             form2.Show();
             this.Hide();
+        }
+        public void setPlaceholder()
+        {
+            tbId.Text = "ID";
+            tbIme.Text = "Ime";
+            tbPrezime.Text = "Prezime";
+            tbEmail.Text = "Email";
+            tbAdresa.Text = "Adresa";
+            tbTelefon.Text = "Telefon";
+        }
+
+        private void DodajClana_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
